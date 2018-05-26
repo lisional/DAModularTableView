@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DAModularTableView.h"
+#import "DAModularTableViewInternal.h"
 
 @interface DAModularTableViewController : UITableViewController
 

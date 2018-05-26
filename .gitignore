@@ -15,6 +15,7 @@ xcuserdata/
 build/
 *.[oa]
 *.pyc
+*.framework
 
 # Backup files
 *~.nib

@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Daniel Amitay. All rights reserved.
 //
 
-#import "DAModularTableView.h"
+#import "DAModularTableViewInternal.h"
 
 @interface DAModularTableView () <UITableViewDelegate, UITableViewDataSource>
 

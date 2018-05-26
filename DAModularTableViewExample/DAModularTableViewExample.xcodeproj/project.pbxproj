@@ -15,17 +15,25 @@
 		632CEA451617AF74008666C0 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632CEA3E1617AF74008666C0 /* RootViewController.m */; };
 		632CEA461617AF74008666C0 /* WaterfallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632CEA401617AF74008666C0 /* WaterfallViewController.m */; };
 		63302FBF16092C4500495864 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63302FBE16092C4500495864 /* icon@2x.png */; };
-		6336C9E015CECE3900464DE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6336C9DF15CECE3900464DE2 /* UIKit.framework */; };
-		6336C9E215CECE3900464DE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6336C9E115CECE3900464DE2 /* Foundation.framework */; };
-		6336C9E415CECE3900464DE2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6336C9E315CECE3900464DE2 /* CoreGraphics.framework */; };
 		6336C9EA15CECE3900464DE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6336C9E815CECE3900464DE2 /* InfoPlist.strings */; };
 		6336C9EC15CECE3900464DE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6336C9EB15CECE3900464DE2 /* main.m */; };
 		6336C9F015CECE3900464DE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6336C9EF15CECE3900464DE2 /* AppDelegate.m */; };
-		638DDA6015EEE55400FFC858 /* DAModularTableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 638DDA5915EEE55400FFC858 /* DAModularTableRow.m */; };
-		638DDA6115EEE55400FFC858 /* DAModularTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 638DDA5B15EEE55400FFC858 /* DAModularTableSection.m */; };
-		638DDA6215EEE55400FFC858 /* DAModularTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 638DDA5D15EEE55400FFC858 /* DAModularTableView.m */; };
-		638DDA6315EEE55400FFC858 /* DAModularTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 638DDA5F15EEE55400FFC858 /* DAModularTableViewController.m */; };
+		97658D6A20BBA4B800ED9350 /* DAModularTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97658D6920BBA4B800ED9350 /* DAModularTableView.framework */; };
+		97FE265620B8EEA800F37BCB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6336C9DF15CECE3900464DE2 /* UIKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		97FE265B20B8EED100F37BCB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		632CEA311617AF3D008666C0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -52,14 +60,7 @@
 		6336C9ED15CECE3900464DE2 /* DAModularTableViewExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DAModularTableViewExample-Prefix.pch"; sourceTree = "<group>"; };
 		6336C9EE15CECE3900464DE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6336C9EF15CECE3900464DE2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		638DDA5815EEE55400FFC858 /* DAModularTableRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAModularTableRow.h; sourceTree = "<group>"; };
-		638DDA5915EEE55400FFC858 /* DAModularTableRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAModularTableRow.m; sourceTree = "<group>"; };
-		638DDA5A15EEE55400FFC858 /* DAModularTableSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAModularTableSection.h; sourceTree = "<group>"; };
-		638DDA5B15EEE55400FFC858 /* DAModularTableSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAModularTableSection.m; sourceTree = "<group>"; };
-		638DDA5C15EEE55400FFC858 /* DAModularTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAModularTableView.h; sourceTree = "<group>"; };
-		638DDA5D15EEE55400FFC858 /* DAModularTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAModularTableView.m; sourceTree = "<group>"; };
-		638DDA5E15EEE55400FFC858 /* DAModularTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAModularTableViewController.h; sourceTree = "<group>"; };
-		638DDA5F15EEE55400FFC858 /* DAModularTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAModularTableViewController.m; sourceTree = "<group>"; };
+		97658D6920BBA4B800ED9350 /* DAModularTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DAModularTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6336C9E015CECE3900464DE2 /* UIKit.framework in Frameworks */,
-				6336C9E215CECE3900464DE2 /* Foundation.framework in Frameworks */,
-				6336C9E415CECE3900464DE2 /* CoreGraphics.framework in Frameworks */,
+				97658D6A20BBA4B800ED9350 /* DAModularTableView.framework in Frameworks */,
+				97FE265620B8EEA800F37BCB /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,6 @@
 		6336C9D015CECE3800464DE2 = {
 			isa = PBXGroup;
 			children = (
-				638DDA5715EEE55400FFC858 /* DAModularTableView */,
 				6336C9E515CECE3900464DE2 /* DAModularTableViewExample */,
 				6336C9DE15CECE3900464DE2 /* Frameworks */,
 				6336C9DC15CECE3900464DE2 /* Products */,
@@ -116,6 +115,7 @@
 		6336C9DE15CECE3900464DE2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				97658D6920BBA4B800ED9350 /* DAModularTableView.framework */,
 				6336C9DF15CECE3900464DE2 /* UIKit.framework */,
 				6336C9E115CECE3900464DE2 /* Foundation.framework */,
 				6336C9E315CECE3900464DE2 /* CoreGraphics.framework */,
@@ -147,22 +147,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		638DDA5715EEE55400FFC858 /* DAModularTableView */ = {
-			isa = PBXGroup;
-			children = (
-				638DDA5815EEE55400FFC858 /* DAModularTableRow.h */,
-				638DDA5915EEE55400FFC858 /* DAModularTableRow.m */,
-				638DDA5A15EEE55400FFC858 /* DAModularTableSection.h */,
-				638DDA5B15EEE55400FFC858 /* DAModularTableSection.m */,
-				638DDA5C15EEE55400FFC858 /* DAModularTableView.h */,
-				638DDA5D15EEE55400FFC858 /* DAModularTableView.m */,
-				638DDA5E15EEE55400FFC858 /* DAModularTableViewController.h */,
-				638DDA5F15EEE55400FFC858 /* DAModularTableViewController.m */,
-			);
-			name = DAModularTableView;
-			path = ../DAModularTableView;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -173,6 +157,7 @@
 				6336C9D715CECE3900464DE2 /* Sources */,
 				6336C9D815CECE3900464DE2 /* Frameworks */,
 				6336C9D915CECE3900464DE2 /* Resources */,
+				97FE265B20B8EED100F37BCB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,7 +174,7 @@
 		6336C9D215CECE3800464DE2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Shout Messenger";
 			};
 			buildConfigurationList = 6336C9D515CECE3800464DE2 /* Build configuration list for PBXProject "DAModularTableViewExample" */;
@@ -229,10 +214,6 @@
 			files = (
 				6336C9EC15CECE3900464DE2 /* main.m in Sources */,
 				6336C9F015CECE3900464DE2 /* AppDelegate.m in Sources */,
-				638DDA6015EEE55400FFC858 /* DAModularTableRow.m in Sources */,
-				638DDA6115EEE55400FFC858 /* DAModularTableSection.m in Sources */,
-				638DDA6215EEE55400FFC858 /* DAModularTableView.m in Sources */,
-				638DDA6315EEE55400FFC858 /* DAModularTableViewController.m in Sources */,
 				632CEA411617AF74008666C0 /* DynamicInsertionViewController.m in Sources */,
 				632CEA421617AF74008666C0 /* DynamicModificationViewController.m in Sources */,
 				632CEA431617AF74008666C0 /* InformationViewController.m in Sources */,
@@ -260,12 +241,31 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -273,10 +273,14 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -285,16 +289,37 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -304,9 +329,15 @@
 		6336CA0015CECE3900464DE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DAModularTableViewExample/DAModularTableViewExample-Prefix.pch";
 				INFOPLIST_FILE = "DAModularTableViewExample/DAModularTableViewExample-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "us.amitay.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -315,9 +346,15 @@
 		6336CA0115CECE3900464DE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DAModularTableViewExample/DAModularTableViewExample-Prefix.pch";
 				INFOPLIST_FILE = "DAModularTableViewExample/DAModularTableViewExample-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "us.amitay.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

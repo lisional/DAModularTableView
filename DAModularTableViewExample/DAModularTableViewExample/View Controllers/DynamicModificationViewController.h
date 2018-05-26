@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Daniel Amitay. All rights reserved.
 //
 
-#import "DAModularTableViewController.h"
+#import <DAModularTableView/DAModularTableView.h>
 
 @interface DynamicModificationViewController : DAModularTableViewController
 
