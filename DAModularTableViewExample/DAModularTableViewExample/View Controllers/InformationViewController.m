@@ -115,7 +115,7 @@
     twitterRow.didSelectBlock = ^(NSIndexPath *indexPath){
         DAModularTableRow *tableRow = [self.tableView rowAtIndexPath:indexPath];
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
-                                                        message:twitterRow.text
+                                                        message:tableRow.text
                                                        delegate:self
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];

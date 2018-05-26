@@ -39,7 +39,7 @@
     textChangeRow.didSelectBlock = ^(NSIndexPath *indexPath){
         self.view.tag += 1;
         DAModularTableRow *tableRow = [self.tableView rowAtIndexPath:indexPath];
-        tableRow.text = [NSString stringWithFormat:@"Text Change (%d)", self.view.tag];
+        tableRow.text = [NSString stringWithFormat:@"Text Change (%ld)", (long)self.view.tag];
         [self.tableView reloadRow:tableRow animated:YES];
     };
     [self.tableView insertRow:textChangeRow];
@@ -62,9 +62,8 @@
     
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 @end

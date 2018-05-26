@@ -43,9 +43,9 @@
     [self.createTimer invalidate];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 - (void)createNewRow
@@ -59,7 +59,7 @@
     [self.tableView insertRow:newRow atIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:YES];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2.0f * NSEC_PER_SEC),
-                   dispatch_get_current_queue(), ^
+                   dispatch_get_main_queue(), ^
                    {
                        [self.tableView removeRow:newRow animated:YES];
                    });
