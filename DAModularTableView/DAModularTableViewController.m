@@ -24,7 +24,7 @@
     if (self)
     {
         self.style = style;
-        self.frame = [[UIScreen mainScreen] applicationFrame];
+        self.frame = [[UIScreen mainScreen] bounds];
     }
     return self;
 }
@@ -56,9 +56,9 @@
         self.viewDidLoadBlock();
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 @end

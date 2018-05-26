@@ -321,7 +321,7 @@
 {
     DAModularTableRow *tableRow = [self rowAtIndexPath:indexPath];
     
-    NSString *cellIdentifier = (tableRow.cellIdentifier ? tableRow.cellIdentifier : [NSString stringWithFormat:@"cellStyle%d", tableRow.cellStyle]);
+    NSString *cellIdentifier = (tableRow.cellIdentifier ? tableRow.cellIdentifier : [NSString stringWithFormat:@"cellStyle%ld", (long)tableRow.cellStyle]);
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil)
     {
