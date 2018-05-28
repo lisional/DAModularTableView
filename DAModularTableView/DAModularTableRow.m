@@ -41,6 +41,7 @@ NSString * const DAModularTableRowPasteAction = @"paste:";
         self.rowAnimation = UITableViewRowAnimationAutomatic;
         self.canBeMoved = NO;
         self.shouldIndentWhileEditing = YES;
+        self.shouldReuseCell = YES;
     }
     return self;
 }

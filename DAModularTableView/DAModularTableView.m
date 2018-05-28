@@ -322,9 +322,13 @@
     DAModularTableRow *tableRow = [self rowAtIndexPath:indexPath];
     
     NSString *cellIdentifier = (tableRow.cellIdentifier ? tableRow.cellIdentifier : [NSString stringWithFormat:@"cellStyle%ld", (long)tableRow.cellStyle]);
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    UITableViewCell *cell = nil;
+    if(tableRow.shouldReuseCell) {
+        cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    }
+
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:tableRow.cellStyle reuseIdentifier:cellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:tableRow.cellStyle reuseIdentifier:(tableRow.shouldReuseCell ? cellIdentifier : nil)];
     }
     
     if (tableRow.attributedText) {

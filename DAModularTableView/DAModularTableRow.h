@@ -28,6 +28,7 @@
 @property (nonatomic) UITableViewRowAnimation rowAnimation;
 @property (nonatomic) BOOL canBeMoved;
 @property (nonatomic) BOOL shouldIndentWhileEditing;
+@property (nonatomic) BOOL shouldReuseCell;
 @property (nonatomic) NSArray *supportedActions;
 
 @property (nonatomic, copy) void(^didSelectBlock)(NSIndexPath *indexPath);
