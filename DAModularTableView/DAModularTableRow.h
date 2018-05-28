@@ -11,6 +11,7 @@
 @interface DAModularTableRow : NSObject
 
 @property (nonatomic, strong) NSString *text;
+@property (nonatomic, strong) NSAttributedString *attributedText;
 @property (nonatomic, strong) NSString *detailText;
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, strong) UIView *accessoryView;

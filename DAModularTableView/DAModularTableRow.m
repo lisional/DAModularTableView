@@ -10,7 +10,7 @@
 
 @implementation DAModularTableRow
 
-@synthesize text, detailText, image, accessoryView, editingAccessoryView;
+@synthesize text, attributedText, detailText, image, accessoryView, editingAccessoryView;
 @synthesize rowHeight;
 @synthesize selectionStyle, accessoryType, cellStyle, editingStyle, rowAnimation;
 @synthesize canBeMoved;

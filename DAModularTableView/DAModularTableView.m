@@ -323,12 +323,16 @@
     
     NSString *cellIdentifier = (tableRow.cellIdentifier ? tableRow.cellIdentifier : [NSString stringWithFormat:@"cellStyle%ld", (long)tableRow.cellStyle]);
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if (cell == nil)
-    {
+    if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:tableRow.cellStyle reuseIdentifier:cellIdentifier];
     }
     
-    cell.textLabel.text = tableRow.text;
+    if (tableRow.attributedText) {
+        cell.textLabel.attributedText = tableRow.attributedText;
+    } else {
+        cell.textLabel.text = tableRow.text;
+    }
+
     cell.detailTextLabel.text = tableRow.detailText;
     cell.imageView.image = tableRow.image;
     cell.accessoryView = tableRow.accessoryView;
@@ -338,8 +342,7 @@
     cell.accessoryType = tableRow.accessoryType;
     cell.editingAccessoryType = tableRow.editingAccessoryType;
     
-    if (tableRow.cellForRowBlock)
-    {
+    if (tableRow.cellForRowBlock) {
         tableRow.cellForRowBlock(cell, indexPath);
     }
     
