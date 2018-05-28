@@ -28,13 +28,19 @@
 @property (nonatomic) UITableViewRowAnimation rowAnimation;
 @property (nonatomic) BOOL canBeMoved;
 @property (nonatomic) BOOL shouldIndentWhileEditing;
+@property (nonatomic) NSArray *supportedActions;
 
 @property (nonatomic, copy) void(^didSelectBlock)(NSIndexPath *indexPath);
 @property (nonatomic, copy) void(^accessoryButtonDidSelectBlock)(NSIndexPath *indexPath);
 @property (nonatomic, copy) void(^cellForRowBlock)(UITableViewCell *cell, NSIndexPath *indexPath);
 @property (nonatomic, copy) NSIndexPath *(^targetIndexPathForMoveFromRowAtIndexPath)(NSIndexPath *indexPath);
+@property (nonatomic, copy) void(^performActionBlock)(SEL action, NSIndexPath *indexPath, id sender);
 @property (nonatomic) SEL didSelectAction;
 
 + (DAModularTableRow *)row;
 
 @end
+
+extern NSString * const DAModularTableRowCutAction;
+extern NSString * const DAModularTableRowCopyAction;
+extern NSString * const DAModularTableRowPasteAction;

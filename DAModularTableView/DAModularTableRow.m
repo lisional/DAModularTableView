@@ -8,6 +8,10 @@
 
 #import "DAModularTableRow.h"
 
+NSString * const DAModularTableRowCutAction = @"cut:";
+NSString * const DAModularTableRowCopyAction = @"copy:";
+NSString * const DAModularTableRowPasteAction = @"paste:";
+
 @implementation DAModularTableRow
 
 @synthesize text, attributedText, detailText, image, accessoryView, editingAccessoryView;

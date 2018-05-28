@@ -488,4 +488,16 @@
     return proposedDestinationIndexPath;
 }
 
+- (BOOL)tableView:(UITableView *)tableView shouldShowMenuForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DAModularTableRow *tableRow = [self rowAtIndexPath:indexPath];
+    return tableRow.supportedActions && [tableRow.supportedActions count] > 0;
+}
+
+- (BOOL)tableView:(UITableView *)tableView canPerformAction:(SEL)action forRowAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender
+{
+    DAModularTableRow *tableRow = [self rowAtIndexPath:indexPath];
+    return [tableRow.supportedActions containsObject:NSStringFromSelector(action)];
+}
+
 @end
