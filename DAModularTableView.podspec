@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'DAModularTableView'
-  s.version      = '1.0.1'
+  s.version      = '1.0.2'
   s.summary      = 'UITableView subclass that eases static or modular UITableViews creation.'
   s.homepage     = 'https://github.com/lisional/DAModularTableView'
   s.license      = { :type => 'MIT', :file => 'LICENSE.md' }
