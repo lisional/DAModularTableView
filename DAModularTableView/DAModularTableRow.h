@@ -14,6 +14,7 @@
 @property (nonatomic, strong) NSAttributedString *attributedText;
 @property (nonatomic, strong) NSString *detailText;
 @property (nonatomic, strong) UIImage *image;
+@property (nonatomic, strong) UIImage *highlightedImage;
 @property (nonatomic, strong) UIView *accessoryView;
 @property (nonatomic, strong) UIView *editingAccessoryView;
 

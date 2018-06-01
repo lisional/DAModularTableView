@@ -339,6 +339,7 @@
 
     cell.detailTextLabel.text = tableRow.detailText;
     cell.imageView.image = tableRow.image;
+    cell.imageView.highlightedImage = tableRow.highlightedImage;
     cell.accessoryView = tableRow.accessoryView;
     cell.editingAccessoryView = tableRow.editingAccessoryView;
     

@@ -14,13 +14,6 @@ NSString * const DAModularTableRowPasteAction = @"paste:";
 
 @implementation DAModularTableRow
 
-@synthesize text, attributedText, detailText, image, accessoryView, editingAccessoryView;
-@synthesize rowHeight;
-@synthesize selectionStyle, accessoryType, cellStyle, editingStyle, rowAnimation;
-@synthesize canBeMoved;
-@synthesize didSelectBlock, cellForRowBlock, didSelectAction, accessoryButtonDidSelectBlock;
-@synthesize targetIndexPathForMoveFromRowAtIndexPath;
-
 #pragma mark - Public Methods
 
 + (DAModularTableRow *)row
