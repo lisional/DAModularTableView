@@ -6,14 +6,19 @@ DAModularTableView abstracts this messiness away, and makes modular table view g
 
 DAModularTableView allows you to individually customize every UITableViewCell as well as providing block callbacks for cell selection.
 
-![Screenshot](https://github.com/danielamitay/DAModularTableView/raw/master/screenshot.png)
-
-[Video demonstration on YouTube](http://www.youtube.com/watch?v=nbVnKns5mjE)
+<p align="center">
+  <img src="./screenshot.png" width="300px"/>
+</p>
 
 ## Installation
 
-- Copy over the `DAModularTableView` folder to your project folder.
-- `#import "DAModularTableView.h"`
+### CocoaPods
+
+In your Podfile:
+
+```ruby
+pod 'DAModularTableView', :git => 'https://github.com/lisional/DAModularTableView.git'
+```
 
 ## Usage
 
